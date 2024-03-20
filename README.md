@@ -25,13 +25,13 @@ If the `/dist` directory is not present or is empty (eg. first time run), please
 npm run build
 ```
 
-Start the development server:
+Start the **development** server:
 
 ```
 npm run dev
 ```
 
-Start the production server:
+Start the **production** server:
 
 ```
 npm run start
