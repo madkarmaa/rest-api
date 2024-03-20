@@ -1,7 +1,5 @@
-<p align="center">
-    <h1>REST API</h1>
-    My own REST API for generic purposes
-</p>
+<h1 align="center">REST API</h1>
+<p align="center">My own REST API for generic purposes</p>
 
 ## 📂 Routes
 
