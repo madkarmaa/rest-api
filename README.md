@@ -12,7 +12,7 @@ Get [profile information for a Discord user](https://discord.com/developers/docs
 ## 🛠️ Contributing
 
 ```
-git clone && cd && npm i
+git clone https://github.com/madkarmaa/rest-api.git && cd rest-api && npm i
 ```
 
 If the `/dist` directory is not present or is empty (eg. first time run), please run the following command to generate it before starting the server:
