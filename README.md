@@ -13,7 +13,7 @@ Get [profile information of a Discord user](https://discord.com/developers/docs/
 >
 > Example: `TOKEN=abcd1234`
 
-## 🛠️ Contributing
+## 🛠️ Build it yourself
 
 ```
 git clone https://github.com/madkarmaa/rest-api.git && cd rest-api && npm i
