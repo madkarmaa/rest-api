@@ -1,5 +1,5 @@
 <h1 align="center">REST API</h1>
-<p align="center">My own REST API for generic purposes, in Node.js</p>
+<p align="center">My own REST API for generic purposes, written using Node.js</p>
 
 ## 📂 Routes
 
