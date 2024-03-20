@@ -7,6 +7,12 @@
 
 Get [profile information for a Discord user](https://discord.com/developers/docs/resources/user#get-user) given their ID. The JSON data is slightly different from the original API specification, transforming media hashes into media URLs.
 
+> [!IMPORTANT]
+>
+> A Discord bot token is **REQUIRED** for this route to work, [learn how to get one](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot). The bot token must be stored in a `.env` file in the root directory of the project under the `TOKEN` key.
+>
+> Example: `TOKEN=abcd1234`
+
 ## 🛠️ Contributing
 
 ```
