@@ -19,13 +19,13 @@ Get [profile information for a Discord user](https://discord.com/developers/docs
 git clone https://github.com/madkarmaa/rest-api.git && cd rest-api && npm i
 ```
 
-If the `/dist` directory is not present or is empty (eg. first time run), please run the following command to generate it before starting the server:
+If the `/dist` directory is not present or is empty (eg. first time run), please run the following command to generate the required files before starting the server:
 
 ```
 npm run build && npm run dev
 ```
 
-Start the development server
+Start the development server:
 
 ```
 npm run dev
