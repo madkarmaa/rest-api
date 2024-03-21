@@ -3,7 +3,7 @@
 
 ## 📂 Routes
 
-### `GET` /discord/user/:userId
+### `GET` /discord/users/:userId
 
 Get [profile information of a Discord user](https://discord.com/developers/docs/resources/user#get-user) given their ID. The JSON data is slightly different from the original API specification, transforming media hashes into media URLs.
 

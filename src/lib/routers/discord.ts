@@ -5,7 +5,7 @@ import cors from 'cors';
 const router = express.Router();
 
 router.get(
-    '/discord/user/:userId',
+    '/discord/users/:userId',
 
     cors({ maxAge: 600 }), // allow requests from all origins with 10 min cache
 
