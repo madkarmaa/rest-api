@@ -15,7 +15,7 @@ Get [profile information of a Discord user](https://discord.com/developers/docs/
 
 ## 🛠️ Build it yourself
 
-Clone the repository and install all the dependencies
+Clone the repository and install all the dependencies:
 
 ```
 git clone https://github.com/madkarmaa/rest-api.git && cd rest-api && npm i
