@@ -15,14 +15,10 @@ Get [profile information of a Discord user](https://discord.com/developers/docs/
 
 ## 🛠️ Build it yourself
 
+Clone the repository and install all the dependencies
+
 ```
 git clone https://github.com/madkarmaa/rest-api.git && cd rest-api && npm i
-```
-
-If the `/dist` directory is not present or is empty (eg. first time run), please run the following command to generate the required files before starting the server:
-
-```
-npm run build
 ```
 
 Start the **development** server:
