@@ -6,11 +6,14 @@ const router = express.Router();
 
 router.get(
     '/discord/user/:userId',
+
+    cors({ maxAge: 600 }), // allow requests from all origins with 10 min cache
+
     (req, res, next) => {
         if (isNaN(parseInt(req.params.userId))) return res.status(400).json({ message: 'User ID is not a number' });
         next();
     },
-    cors({ maxAge: 600 }), // allow requests from all origins with 10 min cache
+
     async (req, res) => {
         let userData: any; // set var to any because the APIUser type is outdated
 
