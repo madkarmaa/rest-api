@@ -13,20 +13,27 @@ const args = _parser.parse_args();
 
 const app = express();
 app.use(express.json());
-
-// dynamically import and use all files in /lib/routers
-// https://stackoverflow.com/a/77335648
-const routers = fs
-    .readdirSync(path.join(__dirname, 'lib', 'routers'), { withFileTypes: true })
-    .filter((item) => !item.isDirectory())
-    .map((item) => item.name);
-
-routers.forEach(async (routerPath) => {
-    const module = await import('./lib/routers/' + routerPath);
-    app.use(module['router']);
+app.use((req, res, next) => {
+    res.removeHeader('X-Powered-By');
+    next();
 });
 
 const { port: PORT } = args;
-app.listen(PORT, () => {
-    console.log('Server listening on port', PORT);
-});
+(async () => {
+    (
+        await Promise.all(
+            // dynamically import and use all files in /lib/routers
+            // https://stackoverflow.com/a/77335648
+            fs
+                .readdirSync(path.join(__dirname, 'lib', 'routers'), { withFileTypes: true })
+                .filter((item) => !item.isDirectory())
+                .map((item) => import('./lib/routers/' + item.name))
+        )
+    ).forEach((module) => {
+        app.use(module['router']);
+    });
+
+    app.listen(PORT, () => {
+        console.log('Server listening on port', PORT);
+    });
+})();
