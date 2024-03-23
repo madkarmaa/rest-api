@@ -19,7 +19,7 @@ Get video information of a TikTok video given its URL.
 
 > [!IMPORTANT]
 >
-> The request body must be tructured the following way:
+> The request body must be structured the following way:
 
 ```json
 { "url": "tiktok video url here" }
