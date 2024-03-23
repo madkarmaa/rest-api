@@ -3,6 +3,7 @@ import { fetchUser } from '../utils/discordRest.js';
 import cors from 'cors';
 
 const router = express.Router();
+router.use(express.json());
 
 router.get(
     '/discord/users/:userId',

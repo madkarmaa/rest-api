@@ -12,7 +12,7 @@ _parser.add_argument('-p', '--port', { type: 'int', default: 3000 });
 const args = _parser.parse_args();
 
 const app = express();
-app.use(express.json());
+
 app.use((req, res, next) => {
     res.removeHeader('X-Powered-By');
     next();
