@@ -20,10 +20,10 @@ Get video information of a TikTok video given its URL.
 > [!IMPORTANT]
 >
 > The request body must be tructured the following way:
->
-> ```json
-> { "url": "tiktok video url here" }
-> ```
+
+```json
+{ "url": "tiktok video url here" }
+```
 
 ## 🛠️ Build it yourself
 
