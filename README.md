@@ -13,7 +13,7 @@ Get [profile information of a Discord user](https://discord.com/developers/docs/
 >
 > Example: `TOKEN=abcd1234`
 
-### `POST` /tiktok/video/info
+### `GET` /tiktok/video/info
 
 Get video information of a TikTok video given its URL.
 

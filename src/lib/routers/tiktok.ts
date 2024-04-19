@@ -8,7 +8,7 @@ import { z } from 'zod';
 const router = express.Router();
 router.use(bodyParser.json());
 
-router.post(
+router.get(
     '/tiktok/video/info',
 
     cors({ maxAge: 600 }), // allow requests from all origins with 10 min cache
